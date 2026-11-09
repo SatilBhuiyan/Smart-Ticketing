@@ -20,6 +20,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="raleway">
+    <!-- Navbar section -->
     <header class="md:container md:mx-auto">
       <nav class="m-8">
         <div class="navbar bg-base-100 shadow-none">
@@ -49,13 +50,13 @@
                 <li><a>Home</a></li>
                 <li><a>About</a></li>
                 <li><a>Destination</a></li>
-                <li><a>Item 3</a></li>
+                <li><a>Search</a></li>
               </ul>
             </div>
             <a class="btn btn-ghost font-extrabold text-4xl">P-Ticket</a>
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 gap-10">
+            <ul class="menu menu-horizontal text-[18px] px-1 gap-10">
               <li><a>Home</a></li>
               <li><a>About</a></li>
               <li><a>Destination</a></li>
@@ -64,7 +65,7 @@
           </div>
           <div class="navbar-end">
             <a
-              class="btn bg-[#1DD1001A] border-[#1DD10066] text-[#1DD100] px-7 rounded-lg"
+              class="btn w-32 h-14 bg-[#1DD1001A] border-[#1DD10066] text-[#1DD100] px-7 rounded-lg text-xl"
               >Bus <i class="fa-solid fa-bus"></i
             ></a>
           </div>
@@ -73,22 +74,50 @@
     </header>
     <main class="md:container md:mx-auto">
       <!-- hero section -->
-      <section class="mb-28">
-        <img class="w-[90%] mx-auto md:w-full" src="images/banner.png" alt="" />
-        <div class="m-[-60px] flex justify-center items-center gap-28">
-          <div class="w-70 h-32 flex justify-center items-center bg-white gap-8 rounded-xl border-b-[4px] border-b-[#1DD100]">
-            <div class="text-[#1DD100] flex justify-center items-center">
-              <img src="images/people.png" alt="">
+      <section class="mb-32">
+        <div
+          class="hero h-[650px] rounded-3xl"
+          style="background-image: url(images/banner.png)"
+        >
+          <div class="hero-overlay"></div>
+          <div class="hero-content text-neutral-content text-center">
+            <div class="w-[700px]">
+              <h1 class="mb-5 text-6xl font-bold">
+                End-to-End Travel with
+                <span class="text-[#1DD100]">P Paribahan</span>
+              </h1>
+              <p class="mb-5">
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined
+                .
+              </p>
+              <button
+                class="btn w-[170px] h-[65px] border-none rounded-2xl font-bold bg-[#1DD100] text-black text-xl"
+              >
+                Buy Tickets
+              </button>
             </div>
-          <div>
-            <div class="stat-value text-black">500K+</div>
-            <div class="stat-desc">Registered users</div>
           </div>
+        </div>
+
+        <div class="m-[-60px] flex justify-center items-center gap-28">
+          <div
+            class="w-70 h-32 flex justify-center items-center bg-white gap-8 rounded-xl border-b-[4px] border-b-[#1DD100]"
+          >
+            <div class="text-[#1DD100] flex justify-center items-center">
+              <img src="images/people.png" alt="" />
+            </div>
+            <div>
+              <div class="stat-value text-black">500K+</div>
+              <div class="stat-desc">Registered users</div>
+            </div>
           </div>
 
-          <div class="w-70 h-32 flex justify-center items-center bg-white gap-8 rounded-xl border-b-[4px] border-b-[#1DD100]">
+          <div
+            class="w-70 h-32 flex justify-center items-center bg-white gap-8 rounded-xl border-b-[4px] border-b-[#1DD100]"
+          >
             <div class="text-[#1DD100] flex justify-center items-center">
-              <img src="images/ticket-cupon.png" alt="">
+              <img src="images/ticket-cupon.png" alt="" />
             </div>
             <div>
               <div class="stat-value text-black">1.7 lacks</div>
@@ -96,14 +125,57 @@
             </div>
           </div>
 
-          <div class="w-70 h-32 flex justify-center items-center bg-white gap-8 rounded-xl border-b-[4px] border-b-[#1DD100]">
+          <div
+            class="w-70 h-32 flex justify-center items-center bg-white gap-8 rounded-xl border-b-[4px] border-b-[#1DD100]"
+          >
             <div class="text-[#1DD100] flex justify-center items-center">
-              <img class="w-14" src="images/bus-icon.png" alt="">
+              <img class="w-14" src="images/bus-icon.png" alt="" />
             </div>
             <div>
               <div class="stat-value text-black">80K+</div>
               <div class="stat-desc">Rental partners</div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- offer section -->
+      <section>
+        <div>
+          <div>
+            <h1 class="text-black font-bold text-5xl text-center">
+              Best offers for you
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-16">
+        <div class="relative mx-auto flex h-[196px] w-full max-w-[573px] items-center overflow-hidden rounded-[24px] bg-[#FFBD0D]">
+          <!-- Left Content -->
+          <div class="flex w-[60%] flex-col justify-center px-8">
+            <h1 class="text-4xl font-extrabold text-[#292929]">15% OFF</h1>
+            <p class="mt-1 text-lg font-semibold text-[#292929]">
+              on your next purchase
+            </p>
+            <p class="mt-2 text-base text-[#92721A]">use by January 2024</p>
+          </div>
+
+          <!-- Divider -->
+          <div class="relative flex h-full w-[2px] items-center">
+            <div class="h-[80%] border-l-2 border-dashed border-white"></div>
+
+            <!-- Top Cutout -->
+            <div class="absolute -top-4 left-1/2 h-8 w-8 -translate-x-1/2 rounded-full bg-white"></div>
+
+            <!-- Bottom Cutout -->
+            <div class="absolute -bottom-4 left-1/2  h-8 w-8 -translate-x-1/2 rounded-full bg-white"></div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="flex flex-1 flex-col items-center justify-center">
+            <h2 class="text-2xl font-extrabold text-black">NEW15</h2>
+            <p class="text-lg text-[#92721A]">Coupon Code</p>
           </div>
         </div>
       </section>
